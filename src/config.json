@@ -1,0 +1,24 @@
+{
+    "j": "cmd:cmd_nextMsg",
+    "k": "cmd:cmd_previousMsg",
+    "o": "cmd:cmd_openConversation",
+
+    "alt+j": "$next-folder.js$",
+    "alt+k": "$prev-folder.js$",
+    "alt+d": "$next-mailbox.js$",
+    "alt+u": "$prev-mailbox.js$",
+    "g i": "$goto-inbox.js$",
+    "g j": "$goto-junk.js$",
+    "g d": "$goto-drafts.js$",
+    "g s": "$goto-sent.js$",
+    "g t": "$goto-trash.js$",
+
+    "f": "cmd:cmd_forward",
+    "r": "cmd:cmd_reply",
+    "shift+r": "cmd:cmd_replyall",
+    "shift+j": "cmd:cmd_markAsJunk",
+    "x": "cmd:cmd_archive",
+    "shift+x": "cmd:cmd_delete",
+
+    "c": "func:MsgNewMessage"
+}
