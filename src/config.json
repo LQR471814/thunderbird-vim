@@ -2,6 +2,10 @@
     "j": "cmd:cmd_nextMsg",
     "k": "cmd:cmd_previousMsg",
     "o": "cmd:cmd_openConversation",
+    "/": "cmd:cmd_showQuickFilterBar",
+    "shift+/": "cmd:cmd_searchMessages",
+    "g g": "window.document.querySelector('browser#mail3PaneTabBrowser1').contentDocument.querySelector('tbody[is=tree-view-table-body]').firstChild.click()",
+    "G": "window.document.querySelector('browser#mail3PaneTabBrowser1').contentDocument.querySelector('tbody[is=tree-view-table-body]').lastChild.click()",
 
     "alt+j": "$next-folder.js$",
     "alt+k": "$prev-folder.js$",
@@ -20,5 +24,6 @@
     "x": "cmd:cmd_archive",
     "shift+x": "cmd:cmd_delete",
 
-    "c": "func:MsgNewMessage"
+    "c": "func:MsgNewMessage",
+    "ctrl+l": "cmd:cmd_getNewMessages"
 }

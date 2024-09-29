@@ -2,6 +2,10 @@
     "j": "cmd:cmd_nextMsg",
     "k": "cmd:cmd_previousMsg",
     "o": "cmd:cmd_openConversation",
+    "/": "cmd:cmd_showQuickFilterBar",
+    "shift+/": "cmd:cmd_searchMessages",
+    "g g": "window.document.querySelector('browser#mail3PaneTabBrowser1').contentDocument.querySelector('tbody[is=tree-view-table-body]').firstChild.click()",
+    "shift+g": "window.document.querySelector('browser#mail3PaneTabBrowser1').contentDocument.querySelector('tbody[is=tree-view-table-body]').lastChild.click()",
 
     "alt+j": "(()=>{function n(l){let e=Array.from(window.document.querySelector(\"browser#mail3PaneTabBrowser1\").contentDocument.querySelectorAll(\"li[is=folder-tree-row]\"));for(let r=0;r<e.length;r++){if(!e[r].classList?.contains(\"selected\"))continue;let t,o=r;do if(o+=l,t=e[o],!t)return;while(t.parentNode.style.height===\"0px\");t.click();return}e[0]?.click()}n(1);})();",
     "alt+k": "(()=>{function n(l){let e=Array.from(window.document.querySelector(\"browser#mail3PaneTabBrowser1\").contentDocument.querySelectorAll(\"li[is=folder-tree-row]\"));for(let r=0;r<e.length;r++){if(!e[r].classList?.contains(\"selected\"))continue;let t,o=r;do if(o+=l,t=e[o],!t)return;while(t.parentNode.style.height===\"0px\");t.click();return}e[0]?.click()}n(-1);})();",
@@ -20,5 +24,6 @@
     "x": "cmd:cmd_archive",
     "shift+x": "cmd:cmd_delete",
 
-    "c": "func:MsgNewMessage"
+    "c": "func:MsgNewMessage",
+    "ctrl+l": "cmd:cmd_getNewMessages"
 }

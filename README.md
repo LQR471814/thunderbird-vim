@@ -14,6 +14,10 @@
 
 - `j`, `k` - go up and down messages.
 - `o` - open a message in its own window.
+- `/` - open the quick filter menu.
+- `shift+/` - open the advanced search window.
+- `g g` - go to the first message
+- `shift+g` - go the last message
 
 ### folders
 
@@ -37,6 +41,7 @@
 ### other
 
 - `c` - compose a new message.
+- `ctrl+l` - fetch new messages.
 
 ## limitations
 
