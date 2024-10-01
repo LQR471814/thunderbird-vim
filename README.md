@@ -35,6 +35,7 @@
 - `r` - reply to a message.
 - `shift+r` - reply to all messages selected.
 - `shift+j` - mark messages as junk.
+- `shift+n` - mark messages as not junk.
 - `x` - archive message.
 - `shift+x` - delete message.
 

@@ -21,6 +21,7 @@
     "r": "cmd:cmd_reply",
     "shift+r": "cmd:cmd_replyall",
     "shift+j": "cmd:cmd_markAsJunk",
+    "shift+n": "cmd:cmd_markAsNotJunk",
     "x": "cmd:cmd_archive",
     "shift+x": "cmd:cmd_delete",
 

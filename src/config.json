@@ -5,7 +5,7 @@
     "/": "cmd:cmd_showQuickFilterBar",
     "shift+/": "cmd:cmd_searchMessages",
     "g g": "window.document.querySelector('browser#mail3PaneTabBrowser1').contentDocument.querySelector('tbody[is=tree-view-table-body]').firstChild.click()",
-    "G": "window.document.querySelector('browser#mail3PaneTabBrowser1').contentDocument.querySelector('tbody[is=tree-view-table-body]').lastChild.click()",
+    "shift+g": "window.document.querySelector('browser#mail3PaneTabBrowser1').contentDocument.querySelector('tbody[is=tree-view-table-body]').lastChild.click()",
 
     "alt+j": "$next-folder.js$",
     "alt+k": "$prev-folder.js$",
@@ -21,6 +21,7 @@
     "r": "cmd:cmd_reply",
     "shift+r": "cmd:cmd_replyall",
     "shift+j": "cmd:cmd_markAsJunk",
+    "shift+n": "cmd:cmd_markAsNotJunk",
     "x": "cmd:cmd_archive",
     "shift+x": "cmd:cmd_delete",
 
