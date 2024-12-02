@@ -25,6 +25,6 @@
     "x": "cmd:cmd_archive",
     "shift+x": "cmd:cmd_delete",
 
-    "c": "func:MsgNewMessage",
-    "ctrl+l": "cmd:cmd_getNewMessages"
+    "shift+a": "func:MsgNewMessage",
+    "ctrl+l": "window.document.querySelector('browser#mail3PaneTabBrowser1').contentDocument.querySelector('#folderPaneGetMessages').click()"
 }

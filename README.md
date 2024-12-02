@@ -41,7 +41,7 @@
 
 ### other
 
-- `c` - compose a new message.
+- `shift+a` - compose a new message.
 - `ctrl+l` - fetch new messages.
 
 ## limitations
