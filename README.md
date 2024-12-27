@@ -28,6 +28,7 @@
 - `g d` go to the "drafts" folder.
 - `g s` go to the "sent" folder.
 - `g t` go to the "trash" folder.
+- `g a` go to the "all mail" folder.
 
 ### message actions
 

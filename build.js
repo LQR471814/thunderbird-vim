@@ -14,6 +14,7 @@ const results = await build({
     "src/goto-sent.js",
     "src/goto-inbox.js",
     "src/goto-trash.js",
+    "src/goto-all.js",
   ],
   target: [
     "es2022",

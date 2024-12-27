@@ -16,6 +16,7 @@
     "g d": "$goto-drafts.js$",
     "g s": "$goto-sent.js$",
     "g t": "$goto-trash.js$",
+    "g a": "$goto-all.js$",
 
     "f": "cmd:cmd_forward",
     "r": "cmd:cmd_reply",
