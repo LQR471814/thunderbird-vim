@@ -1,3 +1,3 @@
-import { changeFolder } from "./utils";
+import { changeFolder } from "./lib/logic";
 
 (() => changeFolder(-1))()

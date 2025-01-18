@@ -1,4 +1,4 @@
-import { getCurrentMailbox } from "./utils"
+import { getCurrentMailbox } from "./lib/logic"
 
 (() => {
   const mailbox = getCurrentMailbox()

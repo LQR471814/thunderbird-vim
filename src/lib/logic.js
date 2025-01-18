@@ -1,11 +1,22 @@
+import { querySelectList, querySelector } from "./query"
+
+/**
+ * @returns {HTMLElement[]}
+ */
+function getMailList() {
+  const container = querySelector("ul#folderTree", [
+    querySelector("browser#mail3PaneTabBrowser1")
+      .contentDocument,
+    "maillist",
+  ])
+  return querySelectList([container, "maillist.folderTree"], "li[is=folder-tree-row]")
+}
+
 /**
  * @param {number} offset
  */
 export function changeFolder(offset) {
-  const rows = Array.from(
-    window.document.querySelector('browser#mail3PaneTabBrowser1')
-      .contentDocument.querySelectorAll('li[is=folder-tree-row]')
-  )
+  const rows = getMailList()
 
   for (let i = 0; i < rows.length; i++) {
     if (!rows[i].classList?.contains("selected")) {
@@ -33,8 +44,8 @@ export function changeFolder(offset) {
  * @returns {HTMLLIElement | null}
  */
 export function getCurrentMailbox() {
-  let current = window.document.querySelector("browser#mail3PaneTabBrowser1")
-    .contentDocument.querySelector("li[is=folder-tree-row].selected.current")
+  let current = getMailList().
+    find((e) => e.classList.contains("selected") && e.classList.contains("current"))
 
   while (!current.getAttribute("data-server-type") && current) {
     current = current.parentNode
