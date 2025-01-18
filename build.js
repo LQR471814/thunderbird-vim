@@ -1,21 +1,18 @@
 import { build } from "esbuild"
-import { basename } from "path"
+import { basename, join } from "path"
 import { readFile, writeFile } from "fs/promises"
+
+/**
+ * @type {string}
+ */
+let config = await readFile("src/config.json", "utf8")
+
+const entryPoints = Array.from(config.matchAll(/\$(.*\.js)\$/g))
+  .map((name) => join("src", name[1]))
 
 const results = await build({
   minify: true,
-  entryPoints: [
-    "src/next-mailbox.js",
-    "src/prev-mailbox.js",
-    "src/next-folder.js",
-    "src/prev-folder.js",
-    "src/goto-junk.js",
-    "src/goto-drafts.js",
-    "src/goto-sent.js",
-    "src/goto-inbox.js",
-    "src/goto-trash.js",
-    "src/goto-all.js",
-  ],
+  entryPoints: entryPoints,
   target: [
     "es2022",
     "firefox128"
@@ -26,8 +23,6 @@ const results = await build({
 })
 
 const decoder = new TextDecoder()
-
-let config = await readFile("src/config.json", "utf8")
 
 for (const file of results.outputFiles) {
   const name = basename(file.path)

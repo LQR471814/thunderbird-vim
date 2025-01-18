@@ -27,5 +27,5 @@
     "shift+x": "cmd:cmd_delete",
 
     "shift+a": "func:MsgNewMessage",
-    "ctrl+l": "window.document.querySelector('browser#mail3PaneTabBrowser1').contentDocument.querySelector('#folderPaneGetMessages').click()"
+    "ctrl+l": "$reload.js$"
 }

@@ -27,5 +27,5 @@
     "shift+x": "cmd:cmd_delete",
 
     "shift+a": "func:MsgNewMessage",
-    "ctrl+l": "window.document.querySelector('browser#mail3PaneTabBrowser1').contentDocument.querySelector('#folderPaneGetMessages').click()"
+    "ctrl+l": "(()=>{function u(){return window.tbvimQueryCache instanceof window.Map||(window.tbvimQueryCache=new window.Map),window.tbvimQueryCache}function o(e,c){let r=\"\",n=window.document;c&&(n=c[0],r=c[1]);let s=`${r} ${e}`,i=u(),t=i.get(s);if(t&&n.contains(t))return t;console.info(\"[querySelector] cache miss:\",e,r,t);let a=n.querySelector(e);return i.set(s,a),a}o(\"#folderPaneGetMessages\",[o(\"browser#mail3PaneTabBrowser1\").contentDocument,\"maillist\"]).click();})();"
 }

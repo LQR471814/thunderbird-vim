@@ -6,7 +6,7 @@
 
 1. install [tbkeys](https://github.com/wshanks/tbkeys?tab=readme-ov-file#install)
 2. go to addons manager > tbkeys > preferences
-3. copy [./config.json](./config.json) and paste it inside the "Main Key Bindings" field then hit "Save Settings".
+3. copy [./config.json](https://raw.githubusercontent.com/LQR471814/thunderbird-vim/refs/heads/main/config.json) and paste it inside the "Main Key Bindings" field then hit "Save Settings".
 
 ## usage
 
