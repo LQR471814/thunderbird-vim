@@ -1,3 +1,3 @@
 import { gotoFolder } from "./lib/logic";
 
-(() => gotoFolder(["drafts"]))()
+(() => gotoFolder("drafts"))()

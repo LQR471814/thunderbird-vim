@@ -54,20 +54,14 @@ export function getCurrentMailbox() {
 }
 
 /**
- * @param {string[]} names
+ * @param {string} type
  */
-export function gotoFolder(names) {
+export function gotoFolder(type) {
   const mailbox = getCurrentMailbox()
-  const rows = mailbox.querySelectorAll("li[is=folder-tree-row]")
-
-  for (const r of rows) {
-    const name = r.innerText.toLowerCase()
-    for (const n of names) {
-      if (name.includes(n)) {
-        r.click()
-        return
-      }
-    }
+  const e = querySelector(`li[is=folder-tree-row][data-folder-type=${type}]`, [mailbox, "mailbox"])
+  if (!e) {
+    return
   }
+  e.click()
 }
 

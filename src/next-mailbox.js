@@ -2,5 +2,9 @@ import { getCurrentMailbox } from "./lib/logic"
 
 (() => {
   const mailbox = getCurrentMailbox()
-  mailbox.nextSibling?.click()
+  const sibling = mailbox.nextSibling?.querySelector("ul li")
+  if (!sibling) {
+    return
+  }
+  sibling.click()
 })()
