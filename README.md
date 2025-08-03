@@ -1,6 +1,6 @@
 # thunderbird-vim
 
-> A vim-like configuration for thunderbird powered by [tbkeys](https://github.com/wshanks/tbkeys).
+> Vim-like thunderbird hotkeys. (powered by [tbkeys](https://github.com/wshanks/tbkeys))
 
 ## install
 
